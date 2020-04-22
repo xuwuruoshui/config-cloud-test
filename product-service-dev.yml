@@ -12,5 +12,5 @@ server:
 # application:
 #   name: product-service
 
-env: dev-qwe
+env: dev
 branch: master
