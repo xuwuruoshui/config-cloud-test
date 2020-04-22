@@ -12,5 +12,6 @@ server:
 # application:
 #   name: product-service
 
-env: dev-ooiii
+env: dev
 branch: master
+qwe: 5000
