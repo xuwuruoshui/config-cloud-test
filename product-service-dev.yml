@@ -12,5 +12,5 @@ server:
 # application:
 #   name: product-service
 
-env: dev
+env: dev-haha
 branch: master
