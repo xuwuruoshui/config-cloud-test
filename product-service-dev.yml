@@ -2,5 +2,5 @@ server:
   port: 8772
 
 
-env: devxx
+env: dev
 branch: master
