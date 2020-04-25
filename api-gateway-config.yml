@@ -1,0 +1,29 @@
+server:
+  port: 9000
+
+zuul:
+  # custom routes mapping
+  routes:
+    product-service: /apigateway/product/**
+    order-service: /apigateway/order/**
+  #ignore product-service
+  #ignored-services: product-service
+  ignored-patterns: /*-service/**
+  #handle the problem of empty http request header
+  sensitive-headers:
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+
+# set zuul's timeout,although there is no ribbon lib,it can still run normally
+ribbon:
+  ConnectTimeout: 2000
+  # 请按实际情况配置
+  ReadTimeout: 3000
+
+# Expose "hystrix.stream" monitoring information
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh,bus-env
