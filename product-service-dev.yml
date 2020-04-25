@@ -1,16 +1,5 @@
 # server name
 spring:
-  # Specify which registry to read from
-  cloud:
-    config:
-      discovery:
-        service-id: CONFIG-SERVER
-        enabled: true
-      # env
-      profile: dev
-      # branch
-      label: master
-
   rabbitmq:
     host: localhost
     port: 5672
