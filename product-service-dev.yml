@@ -3,7 +3,7 @@ server:
 # server name
 spring:
   rabbitmq:
-    host: localhost
+    host: 172.18.148.27
     port: 5672
     username: guest
     password: guest
