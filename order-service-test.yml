@@ -35,7 +35,7 @@ feign:
     config:
       default:
         connectTimeout: 3000
-        readTimeout: 2 000
+        readTimeout: 2000
         loggerLevel: basic
 
 # change the defualt timeoutInMilliseconds
